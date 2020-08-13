@@ -1,7 +1,7 @@
 from aiohttp import web
 from aiohttp.web_request import Request
 
-from src.service import KeyValueData
+from node.src.service import KeyValueData
 
 routes = web.RouteTableDef()
 

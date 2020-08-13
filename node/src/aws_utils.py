@@ -3,7 +3,7 @@ from typing import List
 
 from botocore.response import StreamingBody
 
-from src.config import conf
+from node.src.config import conf
 
 
 async def aws_put_file(s3, file_name, created_file_name):

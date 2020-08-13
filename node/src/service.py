@@ -2,9 +2,9 @@ import copy
 import uuid
 from typing import List, Dict
 
-from src.aws_utils import aws_put_file, aws_dump_json, aws_get_part_file_data
-from src.config import conf
-from src.utils import get_file_size, get_part_file_data
+from node.src.aws_utils import aws_put_file, aws_dump_json, aws_get_part_file_data
+from node.src.config import conf
+from node.src.utils import get_file_size, get_part_file_data
 
 
 class KeyValueData:

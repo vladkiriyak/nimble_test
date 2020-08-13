@@ -1,4 +1,4 @@
 /venv
-local_storage
+node/local_storage
 .idea
-src/config.py
+/node/src/config.py
