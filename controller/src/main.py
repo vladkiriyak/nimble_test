@@ -1,7 +1,6 @@
-import aioboto3 as aioboto3
 import aiohttp
 
-from node.src.service import KeyValueData
+from config import conf
 from .routes import routes
 
 import logging
@@ -11,7 +10,7 @@ from aiohttp import web
 async def init(app):
     app.add_routes(routes)
     logging.basicConfig(level=logging.DEBUG)
-    # app['config'] = conf
+    app['config'] = conf
     app['session'] = aiohttp.ClientSession()
     yield
     await app['session'].close()
